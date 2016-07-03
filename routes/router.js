@@ -3,6 +3,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var user = require('../controllers/user.js');
 var project = require('../controllers/project.js');
+var course = require('../controllers/course.js');
 var comment = require('../controllers/comment.js');
 var discussion = require('../controllers/discussion.js');
 var publication = require('../controllers/publication.js');
@@ -51,6 +52,26 @@ router.put('/v1/project/removeSupport', project.removeSupport);
 router.get('/v1/project/activitiesComments/:projectId', project.activitiesComments);
 router.get('/v1/project/activitiesPublications/:projectId', project.activitiesPublications);
 router.get('/v1/project/activitiesDiscussions/:projectId', project.activitiesDiscussions);
+
+
+//  courses
+router.get('/v1/courses', course.list);
+router.get('/v1/course/:courseId', course.courseById);
+router.get('/v1/courses/:userId', course.listUser);
+router.post('/v1/courses', course.create);
+router.delete('/v1/courses', course.delete);
+// router.put('/v1/course/followcourse/:courseId', course.followcourse);
+// router.put('/v1/course/unFollowcourse/:courseId', course.unFollowcourse);
+// router.put('/v1/course/addView', course.addView);
+// router.put('/v1/course/removeView', course.removeView);
+// router.put('/v1/course/addRequest/:courseId', course.addRequest);
+// router.put('/v1/course/removeRequest/:courseId', course.removeRequest);
+// router.put('/v1/course/approveRequest/:courseId', course.approveRequest);
+// router.put('/v1/course/addSupport', course.addSupport);
+// router.put('/v1/course/removeSupport', course.removeSupport);
+router.get('/v1/course/activitiesComments/:courseId', course.activitiesComments);
+router.get('/v1/course/activitiesPublications/:courseId', course.activitiesPublications);
+router.get('/v1/course/activitiesDiscussions/:courseId', course.activitiesDiscussions);
 
 
 

@@ -1,0 +1,26 @@
+nom .
+catégorie.
+description (résumé).
+contenu .
+administrateur.
+créé par .
+crée le.
+modifié par .
+modifié le.
+suivi par.
+nom de visionnement.
+note global
+image .
+
+Fonction
+
+============================================================================
+**Fonction sur la carte (disponible aux utilisateur qui visionnent)
+
+Suivre un cour
+Noter un cours (on donne simplement une mention "en vaux la peine") - [ donner un YES]
+============================================================================
+**Fonction disponible à tous les utilisateurs
+
+Créer un cours
+Mettre à jour un cours (nécessite l'approbation du créateur si l'utilisateur n'est pas le créateur)
