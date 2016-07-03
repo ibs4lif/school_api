@@ -11,12 +11,14 @@ var publication = require('../controllers/publication.js');
 // var db = mongojs('ibrahima:sarr@ds011158.mlab.com:11158/organigramme', ['employee','department','procedures','questions']);
 // var db = mongojs('organigramme', ['employee','department','procedures','questions']);
 var bodyParser = require('body-parser');
+var cors = require('cors');
 
 var db ='mongodb://ibrahima:school123@ds011725.mlab.com:11725/school';
 mongoose.connect(db);
 
 // var user = require('../models/user.js');
 
+router.use(cors());
 router.use(bodyParser.json());
 
 
