@@ -55,11 +55,11 @@ router.get('/v1/project/activitiesDiscussions/:projectId', project.activitiesDis
 
 
 //  courses
-router.get('/v1/courses', course.list);
-router.get('/v1/course/:courseId', course.courseById);
-router.get('/v1/courses/:userId', course.listUser);
-router.post('/v1/courses', course.create);
-router.delete('/v1/courses', course.delete);
+router.get('/courses', course.list);
+router.get('/course/:courseId', course.courseById);
+router.get('/courses/:userId', course.listUser);
+router.post('/courses', course.create);
+router.delete('/courses', course.delete);
 // router.put('/v1/course/followcourse/:courseId', course.followcourse);
 // router.put('/v1/course/unFollowcourse/:courseId', course.unFollowcourse);
 // router.put('/v1/course/addView', course.addView);
@@ -69,9 +69,9 @@ router.delete('/v1/courses', course.delete);
 // router.put('/v1/course/approveRequest/:courseId', course.approveRequest);
 // router.put('/v1/course/addSupport', course.addSupport);
 // router.put('/v1/course/removeSupport', course.removeSupport);
-router.get('/v1/course/activitiesComments/:courseId', course.activitiesComments);
-router.get('/v1/course/activitiesPublications/:courseId', course.activitiesPublications);
-router.get('/v1/course/activitiesDiscussions/:courseId', course.activitiesDiscussions);
+// router.get('/v1/course/activitiesComments/:courseId', course.activitiesComments);
+// router.get('/v1/course/activitiesPublications/:courseId', course.activitiesPublications);
+// router.get('/v1/course/activitiesDiscussions/:courseId', course.activitiesDiscussions);
 
 
 

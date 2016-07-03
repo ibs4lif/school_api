@@ -91,7 +91,7 @@ exports.courseById = function (req, res, next) {
 
 exports.list = function (req, res, next) {
   Course.find({})
-  .populate('createdBy')
+//   .populate('createdBy')
   .exec(function(err, courses) {
     res.json(courses);
   });
